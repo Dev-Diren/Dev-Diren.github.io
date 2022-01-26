@@ -1,0 +1,268 @@
+/* NOTE: Used W3C as documentation for creating CSS */
+
+ /* This is to help screen content automatically resize for screen size */
+
+  /* With the exception of general css css modifications will be mostly laid out top to bottom as seen. */
+
+  /* Credited Code */
+  /* -----
+
+  https://webaim.org/resources/contrastchecker/ - Contrast checking tools
+
+----- */
+/* Variables */
+:root {
+    --cgrey: #E0E0E0;
+    --cblgrey: #78909C;
+    --cblue: #0277BD;
+    --cdgrey: #E0E0E0;
+    --cvdgrey: #E0E0E0;
+    --cblack: #212121;
+    --cpurp: #8E24AA;
+    --cpurp2: #CE93D8;
+    --cpurpw: #e2d7f1;
+    --cwhite: #78909C;
+    --caltwhite: #37474F;
+    --ctruwhite: #212121;
+
+}
+
+
+
+/* General Css */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size:3vw;
+    /* outline: 1px solid rgb(109, 8, 8); */
+}
+
+
+section {
+    color: var(--cdgrey);
+    width: 50%;
+    margin: auto;
+    text-align-last: center;
+}
+p, a, h1, h2, h3, h4, h5 {
+     color: var(--cdgrey); 
+     word-wrap: normal;
+     text-decoration: none;
+     font-weight: normal;
+     margin: 0;
+
+     /* overflow-wrap: break-word; */
+    /* ^ Looks cool but its not really useful for now. */
+ }
+a {
+    color: var(--cblue);
+    text-decoration: underline;
+}
+
+hr {
+     margin-top: 0;
+     border-style: dashed;
+     border:1px dotted var(--cpurp2);
+ }
+
+/* classes */
+
+.articleHr {
+     border: 1px solid var(--cgrey);
+     margin: 1%;     
+ }
+.mainBox {
+    min-width: 80%;
+    max-width:100%;
+    background-color: var(--ctruwhite);
+    margin-top: 0;
+    height: 100%;
+/*May not be good idead*/
+    /*height: 100%;*/
+}
+
+/* Navbar Stuff */
+
+
+
+
+#navBar-Container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color:var(--cvdgrey);
+    margin: 0;
+
+}
+
+#navBar { 
+    margin: 0;
+    margin-right: 5%;
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    max-height: 2rem;
+    text-align: center;
+    
+}
+.navLis {
+    display: block;
+    margin: 0;
+    width: 40%;
+    max-height: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: .2s;
+}
+
+.navLis:hover {
+    /* border: 2px solid black; */
+    transition: .5s;
+    background-color: var(--cwhite);
+    padding: .5%;
+    max-height: fit-content;
+    border-radius: .5ch;
+    --caltwhite:var(--cvdgrey);
+}
+#logoImg {
+    max-width: auto;
+    max-height: 3rem;
+    min-height: 2rem;
+}
+#logo {
+    width: 100%;
+    height: 100%;
+    align-self: flex-start;
+    margin-right: 15%;
+    background-color: var(--cwhite);
+    padding: 0;
+    border-radius: 0;
+}
+
+.menuA {
+    height: 100%;
+    color: var(--caltwhite);
+    text-decoration: none;
+    align-self: center;
+}
+
+/* Banner Image */
+
+#coding2 {
+    width: 99.4%;
+    border-radius: .3ch;
+    padding-left: .1ch;
+    padding-right:.1ch;
+    transition: .1s;
+}
+#coding2:hover {
+    width: 99.6%;
+    transition: .1s;
+    border:1px solid var(--cblue);
+    /* border-radius: .3ch; */
+    /* padding-left: .1ch; */
+    /* padding-right:.1ch; */
+}
+
+/* Article Stuff */
+
+.articleImage {
+    display: block;
+    height: auto;
+    max-width: 20%;
+    margin: 1%;
+    height: fit-content;
+    border-radius: 1ch;
+    border:var(--cpurp2) dashed .1ch;
+    transition: .5s;
+}
+
+.articleImage:hover {
+    max-width: 21%;
+    transition: .5s;
+    border:1px solid var(--cblue);
+
+}
+
+.articleBox {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.articleText {
+    display: flexbox;
+    width: max-content;
+}
+
+.boldyHeader {
+    color: var(--cblack);
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+.articleImageWrapper {
+    margin: 0;
+    display: block;
+    height: fit-content;
+}
+
+/* Ids */
+
+#mainBoxDiv {
+    background-color: var(--cwhite);
+    margin: 1ch;
+    margin-top: 0;
+    margin-bottom: 1%;
+    border-radius: 1ch;
+    min-width: 100%;
+}
+
+
+#Footer {
+    display: block;
+    height: 2ch;
+    text-align: center;
+}
+#FooterText {
+    color: var(--cdgrey);
+    text-align: center;
+    font-size: 50%;
+}
+
+
+
+/* Table related stuff */
+
+#tableCPD {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    font-size: 2vw;
+    
+  }
+  
+  #tableCPD td, #tableCPD th {
+    border: 1px solid var(--cvdgrey);
+    padding: 8px;
+  }
+  
+  #tableCPD tr:nth-child(even){background-color: var(--cwhite);}
+  
+  #tableCPD tr:hover {
+    background-color: var(--cpurp2);
+    transition: .2s;
+  }
+  
+  #tableCPD th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--cpurp);
+    color: var(--cwhite);
+  }
+
+
+

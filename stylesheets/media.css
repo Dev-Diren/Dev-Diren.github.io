@@ -1,0 +1,119 @@
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+
+
+
+
+/* This is for NavBar resize */
+
+
+#navBar-Container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color:var(--cvdgrey);
+    margin: 0;
+
+}
+
+#navBar { 
+    margin: 0;
+    margin-right: 5%;
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    max-height: 2rem;
+    text-align: center;
+    
+}
+.navLis {
+    display: block;
+    margin: 0;
+    width: 40%;
+    max-height: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.navLis:hover {
+    /* border: 2px solid black; */
+    transition: .5s;
+    background-color: var(--cwhite);
+    padding: .5%;
+    max-height: fit-content;
+    --caltwhite:var(--cvdgrey);
+}
+#logoImg {
+    max-width: auto;
+    max-height: 2rem;
+}
+
+#logo {
+    
+    max-width: auto;
+    max-height: 100%;
+    align-self: flex-start;
+    margin-right: 0;
+    background-color: var(--cwhite);
+    padding: 0;
+}
+
+.menuA {
+    height: fit-content;
+    color: var(--caltwhite);
+    text-decoration: none;
+    align-self: center;
+}
+
+
+
+
+
+
+/* This is for Article resize */
+
+    .articleBox {
+        flex-direction: column;
+    }
+    .articleImage {
+        
+        position: relative;
+        min-width: 50%;
+        max-width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+
+    }
+    .articleText {
+        margin-left: 1%;
+        margin-right: 1%;
+        min-width: 100%;
+        /* background-color: gray; */
+        display: block;
+        width: 80%;
+        
+        /* outline: #96c4d6 solid 3px; */
+    
+        
+    }
+    
+    #tableCPD {
+        width: 90%;
+    }
+    #navBar {
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-width:300px) {
+    /* For mobile phones: */
+
+
+body {
+    min-width: 300px;
+}
+}
